@@ -301,6 +301,7 @@ body.menu {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
   width: 100%;
+  padding-bottom: 70px;
 }
 
 /* Grid Items */
@@ -311,6 +312,7 @@ body.menu {
   text-align: center;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
 .grid-item img {
@@ -319,6 +321,7 @@ body.menu {
   border-radius: 10px;
   max-height: 200px;
   object-fit: cover;
+
 }
 
 .grid-item h3 {
@@ -374,6 +377,7 @@ body.menu {
   width: 100%;
   border-top: 2px solid #f9ce28;
   text-decoration: none;
+  z-index: 1000;
 }
 
 .footer-btn {
@@ -500,6 +504,7 @@ body.favorites {
   width: 100%;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 70px;
 }
 
 .favorite-item {
@@ -653,7 +658,7 @@ body.favorites {
   }
 }
 
-
+/* order design...................................................css */
 .order-heading {
   background-color: #fff;
   border-bottom: 2px solid #D9D9D9;
@@ -679,6 +684,7 @@ body.favorites {
   padding: 1rem;
   width: 100%;
   margin: 0 auto; /* Centers the container on larger screens */
+  padding-bottom: 70px;
 }
 
 .order-item {
@@ -784,6 +790,60 @@ footer button {
 footer button:hover {
   background-color: #e0af1d;
 }
+
+@media screen and (max-width: 480px) {
+  .order-heading {
+    height: 8vh;
+  }
+
+  .order-heading h2 {
+    font-size: 1.25rem;
+  } 
+  .order-item {
+    padding: 0.3rem;
+  }
+
+  .order-item h3 {
+    font-size: 12px;
+  }
+
+  .quantity-btn {
+    width: 22px;
+    height: 22px;
+    font-size: 15px;
+  }
+
+  .quantity-display {
+    font-size: 11px;
+  }
+
+  .order-total {
+    margin: 5px;
+    padding: 10px;
+  }
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .order-container {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-container {
+    padding: 0.25rem; /* Further reduce padding for mobile */
+  }
+}
+
+
 
 .join-queue {
   width: 100%;
