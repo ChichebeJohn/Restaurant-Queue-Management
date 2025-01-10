@@ -56,6 +56,11 @@ export default function Menu() {
     { name: 'Beef Shawarma', price: '₦ 3,500', prepTime: 3, imgSrc: '/shawarma.png' },
     { name: 'Margherita Pizza', price: '₦ 24,000', prepTime: 4, imgSrc: '/pizza.png' },
     { name: 'Spicy Cajun Fries', price: '₦ 8,000', prepTime: 10, imgSrc: '/fries.png' },
+    {name: 'Chocolate Overload Cupcake',price:'₦ 1,000', prepTime: 2, imgSrc:'/cupcake.png'},
+    {name:'Irish Vanilla Milkshake', price:'₦ 6,000', prepTime: 3, imgSrc:'/milkshake.png'},
+    {name:'Classic Cappuccino Coffee', price:'₦ 1,500', prepTime: 2, imgSrc:'/coffee.png'},
+    {name:'Nutella & Banana Pancake', price:'₦ 3,000', prepTime: 3, imgSrc:'/pancake.png'},
+    
   ];
 
   const handleSearchButtonClick = () => {
