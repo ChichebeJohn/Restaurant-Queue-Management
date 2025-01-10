@@ -72,14 +72,14 @@ export default function Favorites() {
         </div>
       )}
 
-      <footer className="footer-nava">
-        <button className="footer-btna">
+      <footer className="footer-nav">
+        <button className="footer-btn">
           <a href="/menu" style={{textDecoration:'none', color:'inherit'}}>Menu</a>
         </button>
-        <button className="footer-btna">
+        <button className="footer-btn">
           <a href="/favorites" style={{textDecoration:'none', color:'inherit'}}>Favorites</a>
         </button>
-        <button className="footer-btna">
+        <button className="footer-btn">
           <a href="/order" style={{textDecoration:'none', color:'inherit'}}>View Order</a>
         </button>
       </footer>
