@@ -885,7 +885,7 @@ footer button:hover {
   justify-content: center;
   /* padding-top: 0.5rem; */
   /* margin-top: 15px; */
-  width: 95%;
+  width: 100%;
   align-self: center;
   justify-self: center;
   border-bottom-right-radius: 5px;
@@ -902,7 +902,7 @@ footer button:hover {
   justify-content: center;
   padding-top: 0.5rem;
   margin-top: 15px;
-  width: 95%;
+  width: 100%;
   align-self: center;
   justify-self: center;
 }
