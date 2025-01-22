@@ -11,7 +11,7 @@ export default function Menu() {
   useEffect(() => {
     // Retrieve favorites and orders from localStorage
     const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    const storedOrders = JSON.parse(localStorage.getItem('orders')) || [];
+    const storedOrders = JSON.parse(sessionStorage.getItem('orders')) || [];
     setFavorites(storedFavorites);
     setOrders(storedOrders);
   }, []);
@@ -41,7 +41,7 @@ export default function Menu() {
     if (!isItemInOrder) {
       const updatedOrders = [...orders, item];
       setOrders(updatedOrders);
-      localStorage.setItem('orders', JSON.stringify(updatedOrders));
+      sessionStorage.setItem('orders', JSON.stringify(updatedOrders));
       setOrderFeedback(true);
 
       // Hide feedback after 2 seconds
