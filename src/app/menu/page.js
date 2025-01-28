@@ -102,8 +102,8 @@ export default function Menu() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                width="24"
-                height="24"
+                width="50"
+                height="50"
                 className={favorites.some(fav => fav.name === item.name) ? 'heart-icon active' : 'heart-icon'}
               >
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.5 3.5 5 5.5 5c1.54 0 3.04.99 3.57 2.36h.86C9.46 5.99 10.96 5 12.5 5c2 0 3.5 1.5 3.5 3.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
